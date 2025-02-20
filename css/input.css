@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply font-roboto;
+}
+header#header {
+  background: linear-gradient(180deg, #000 0%, rgba(115, 115, 115, 0) 100%);
+}
+#menu-principal {
+  ul {
+    @apply flex items-center space-x-10;
+    a {
+      color: #fff;
+    }
+  }
+}
+.bg-gradient-banner {
+  background: linear-gradient(90deg, #00244c 0%, rgba(38, 117, 217, 0) 100%);
+}
+
+.btn {
+  @apply font-bold py-2 px-4 rounded-xl transition-all duration-300;
+}
+.btn-blue {
+  @apply bg-[#3A89BE] text-white shadow-sm;
+  &:hover {
+    @apply bg-[#2c85c0];
+  }
+}
+
+.caja-home {
+  .contenido {
+    background-image: url(../img/bg-seccion.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
