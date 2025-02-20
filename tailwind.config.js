@@ -2,7 +2,7 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: ["*.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
@@ -13,6 +13,7 @@ module.exports = {
       colors: {
         celeste: "#3A89BE",
         azul: "#143F74",
+        "azul-oscuro": "#0F172A",
         amarillo: "#D3992D",
       },
     },

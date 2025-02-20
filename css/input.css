@@ -11,10 +11,13 @@ header#header {
 }
 #menu-principal {
   ul {
-    @apply flex items-center space-x-10;
+    @apply flex items-center md:space-x-10;
     a {
       color: #fff;
     }
+  }
+  button {
+    line-height: 0;
   }
 }
 .bg-gradient-banner {
@@ -36,5 +39,33 @@ header#header {
     background-image: url(../img/bg-seccion.jpg);
     background-size: cover;
     background-position: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .bg-gradient-banner {
+    background: linear-gradient(
+      90deg,
+      #00244c 0%,
+      rgba(38, 117, 217, 0.4) 100%
+    );
+  }
+  #menu-principal {
+    .menu {
+      &.active {
+        @apply block absolute left-3 right-3 z-50;
+        ul {
+          @apply block;
+          a {
+            @apply block py-2 px-4 text-right border-b border-b-azul-oscuro/40 bg-azul hover:bg-azul/95;
+          }
+          li:last-child {
+            a {
+              @apply border-b-0;
+            }
+          }
+        }
+      }
+    }
   }
 }
