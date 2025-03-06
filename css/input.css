@@ -2,6 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwindcss /typography;
 
 * {
   @apply font-roboto;
@@ -25,7 +26,7 @@ header#header {
 }
 
 .btn {
-  @apply font-bold py-2 px-4 rounded-xl transition-all duration-300;
+  @apply w-full block bg-azul text-white text-center py-2 px-4 rounded-md;
 }
 .btn-blue {
   @apply bg-[#3A89BE] text-white shadow-sm;
@@ -41,7 +42,9 @@ header#header {
     background-position: center;
   }
 }
-
+.swiper-pagination-bullet-active {
+  @apply !bg-azul;
+}
 @media (max-width: 768px) {
   .bg-gradient-banner {
     background: linear-gradient(
