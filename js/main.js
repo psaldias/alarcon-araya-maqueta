@@ -6,6 +6,7 @@ menu_button.addEventListener("click", () => {
 const swiper = new Swiper(".swiper-clientes", {
   // Optional parameters
   loop: true,
+  autoHeight: true,
 
   // If we need pagination
   pagination: {
