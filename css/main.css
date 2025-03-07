@@ -1648,14 +1648,14 @@ video {
   margin-right: auto;
 }
 
-.my-4{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 .my-2{
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .mb-1{
@@ -1726,6 +1726,10 @@ video {
   height: 2.5rem;
 }
 
+.h-16{
+  height: 4rem;
+}
+
 .h-20{
   height: 5rem;
 }
@@ -1760,10 +1764,6 @@ video {
 
 .h-full{
   height: 100%;
-}
-
-.h-16{
-  height: 4rem;
 }
 
 .min-h-52{
@@ -2471,7 +2471,7 @@ header#header {
   }
 
   .banner-contacto {
-    background-image: url(../img/banner-contacto-m.jpg);
+    background-image: url(../img/banner-contacto-m.jpg?v=002);
   }
 
   .banner-interior {
