@@ -62,7 +62,8 @@ header#header {
   background-image: url(../img/banner-nosotros.jpg);
 }
 .banner-reconocimiento {
-  background-image: url(../img/banner-reconocimiento.jpg);
+  background-image: url(../img/banner-reconocimiento.v2.jpg);
+  background-position: center 20%;
 }
 .banner-areas-practica {
   background-image: url(../img/banner-area-de-practica.jpg);
@@ -103,7 +104,8 @@ header#header {
     background-image: url(../img/banner-nosotros-m.jpg);
   }
   .banner-reconocimiento {
-    background-image: url(../img/banner-reconocimiento-m.jpg);
+    background-image: url(../img/banner-reconocimiento-m.v2.jpg);
+    background-position: center;
   }
   .banner-areas-practica {
     background-image: url(../img/banner-area-de-practica-m.jpg);
