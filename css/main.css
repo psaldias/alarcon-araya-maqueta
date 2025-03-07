@@ -1805,10 +1805,6 @@ video {
   max-width: 80%;
 }
 
-.max-w-\[90\%\]{
-  max-width: 90%;
-}
-
 .max-w-\[95\%\]{
   max-width: 95%;
 }
@@ -1863,10 +1859,6 @@ video {
 
 .gap-4{
   gap: 1rem;
-}
-
-.gap-1{
-  gap: 0.25rem;
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]){
@@ -2127,6 +2119,10 @@ video {
   padding-bottom: 5rem;
 }
 
+.pb-24{
+  padding-bottom: 6rem;
+}
+
 .pb-32{
   padding-bottom: 8rem;
 }
@@ -2159,32 +2155,8 @@ video {
   padding-top: 10rem;
 }
 
-.pt-52{
-  padding-top: 13rem;
-}
-
 .pt-6{
   padding-top: 1.5rem;
-}
-
-.pt-24{
-  padding-top: 6rem;
-}
-
-.pt-36{
-  padding-top: 9rem;
-}
-
-.pb-24{
-  padding-bottom: 6rem;
-}
-
-.pb-2{
-  padding-bottom: 0.5rem;
-}
-
-.pb-28{
-  padding-bottom: 7rem;
 }
 
 .text-center{
@@ -2214,6 +2186,10 @@ video {
   line-height: 2.5rem;
 }
 
+.text-\[12px\]{
+  font-size: 12px;
+}
+
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -2222,19 +2198,6 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-xs{
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
-.text-\[10px\]{
-  font-size: 10px;
-}
-
-.text-\[12px\]{
-  font-size: 12px;
 }
 
 .font-bold{
@@ -2456,6 +2419,10 @@ header#header {
     .item {
       background-size: 100% auto;
     }
+    h1,
+    .description {
+      text-shadow: 0px 1px 20px rgba(0, 0, 0, 0.4);
+    }
   }
 
   .banner-nosotros {
@@ -2481,6 +2448,10 @@ header#header {
         #00244c 0%,
         rgba(217, 217, 217, 0) 50%
       );
+    }
+    h1,
+    .description {
+      text-shadow: 0px 1px 20px rgba(0, 0, 0, 0.8);
     }
   }
 
@@ -3305,10 +3276,6 @@ header#header {
 
   .sm\:pt-10{
     padding-top: 2.5rem;
-  }
-
-  .sm\:pt-40{
-    padding-top: 10rem;
   }
 
   .sm\:text-left{
