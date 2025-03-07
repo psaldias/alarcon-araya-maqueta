@@ -1865,6 +1865,10 @@ video {
   gap: 1rem;
 }
 
+.gap-1{
+  gap: 0.25rem;
+}
+
 .space-y-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -2163,6 +2167,26 @@ video {
   padding-top: 1.5rem;
 }
 
+.pt-24{
+  padding-top: 6rem;
+}
+
+.pt-36{
+  padding-top: 9rem;
+}
+
+.pb-24{
+  padding-bottom: 6rem;
+}
+
+.pb-2{
+  padding-bottom: 0.5rem;
+}
+
+.pb-28{
+  padding-bottom: 7rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -2198,6 +2222,19 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-\[10px\]{
+  font-size: 10px;
+}
+
+.text-\[12px\]{
+  font-size: 12px;
 }
 
 .font-bold{
@@ -3268,6 +3305,10 @@ header#header {
 
   .sm\:pt-10{
     padding-top: 2.5rem;
+  }
+
+  .sm\:pt-40{
+    padding-top: 10rem;
   }
 
   .sm\:text-left{
