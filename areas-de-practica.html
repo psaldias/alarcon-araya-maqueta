@@ -21,7 +21,7 @@
             <div id="menu-principal" class="order-2 sm:order-1">
                 <button class="block md:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="text-azul w-10 h-10"
-                        fill="#FFF">
+                        fill="#143f74">
                         <path
                             d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
                     </svg>
@@ -37,7 +37,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="rrss md:min-w-28 md:order-2 mr-6 md:mr-0">
+            <div class="rrss md:min-w-28 md:order-2 mr-6 md:mr-0 hidden sm:block">
                 <ul class="flex items-center justify-end">
                     <li><a href="https://www.instagram.com/alarcon_araya/" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 20 22"
@@ -61,34 +61,33 @@
 
     <div class="banner-principal relative">
         <div class="slider">
-            <div class="item bg-cover bg-center  w-full relative"
-                style="background-image:url(img/banner-area-de-practica.jpg)">
+            <div class="item  w-full relative banner-interior banner-areas-practica">
                 <div
-                    class="h-full min-h-[450px] py-40  sm:min-h-[600px] lg:w-6/12  bg-gradient-banner flex items-center">
-                    <div class="content px-4 md:max-w-[80%] mx-auto ">
-                        <h1 class="font-pt text-white text-2xl xl:text-3xl">
+                    class="h-full min-h-[450px] pt-40 pb-32 sm:py-40  sm:min-h-[600px] lg:w-6/12  bg-gradient-banner flex items-center">
+                    <div class="content px-4 max-w-[90%] sm:max-w-[90%] xl:max-w-[80%]  mx-auto  ">
+                        <h1 class="font-pt text-white text-4xl">
                             Áreas de Práctica
                         </h1>
                         <div class="border-b border-b-white/30 max-w-[50%] my-4"></div>
 
-                        <div class="description text-white font-inter leading-7 ">
+                        <div class="description text-white font-inter prose font-light prose-sm sm:prose-base ">
                             Nuestras áreas de práctica abarcan diversas especialidades legales, brindando asesoría
                             integral y soluciones adaptadas a cada necesidad.Nuestras áreas de práctica abarcan diversas
                             especialidades legales, brindando asesoría
                         </div>
-                        <div class="botonera grid sm:grid-cols-2 gap-4 mt-4">
+                        <div class="botonera grid sm:grid-cols-2 gap-4 mt-4 max-w-60 sm:max-w-none">
                             <a href="#defensa-corporativa"
-                                class="block text-white border border-white py-2 px-6 text-center rounded-md leading-tight hover:bg-white/10 transition-all">DEFENSA
+                                class="text-sm sm:text-base block text-white border border-white py-2 px-6 text-center rounded-md leading-tight hover:bg-white/10 transition-all">DEFENSA
                                 CORPORATIVA</a>
                             <a href="#litigacion-penal"
-                                class="block text-white border border-white py-2 px-6 text-center rounded-md leading-tight hover:bg-white/10 transition-all">LITIGACIÓN
+                                class="text-sm sm:text-base block text-white border border-white py-2 px-6 text-center rounded-md leading-tight hover:bg-white/10 transition-all">LITIGACIÓN
                                 PENAL</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="absolute bottom-5 left-1/2">
+        <div class="absolute bottom-5 left-1/2 hidden sm:block">
             <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
                 <path
                     d="M1.73892e-05 16.9841C0.0132986 7.59423 7.63076 -0.0112765 17.0113 1.25512e-05C26.4091 0.0113016 34.0226 7.64072 34 17.0233C33.9774 26.4184 26.3527 34.0233 16.9808 34C7.58295 33.9761 -0.0132639 26.3646 1.73892e-05 16.9841ZM3.39803 16.9987C3.39537 24.5013 9.47885 30.5881 16.994 30.6027C24.488 30.6173 30.5854 24.5258 30.6013 17.01C30.6166 9.50939 24.5006 3.39072 16.9967 3.39868C9.48549 3.40665 3.40068 9.49212 3.39803 16.9993V16.9987Z"
@@ -99,6 +98,7 @@
             </svg>
         </div>
     </div>
+
 
     <div class="titulo text-center py-16 px-4">
         <h2 class="font-pt text-azul text-2xl xl:text-3xl font-bold">
@@ -382,7 +382,7 @@
     <footer class="bg-azul-oscuro text-white px-4 py-14">
         <div
             class="max-w-[95%] lg:max-w-[80%] mx-auto flex flex-wrap sm:flex-nowrap justify-center items-center sm:items-start space-y-6 sm:space-y-0">
-            <div class="w-full sm:w-1/4 ">
+            <div class="w-full sm:w-1/4 text-center sm:text-left">
                 <a href="index.html" class="inline-block"><img src="img/logo.png" alt="logo"
                         class="h-20 sm:h-24 block mx-auto sm:mx-0"></a>
             </div>

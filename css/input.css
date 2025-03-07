@@ -45,13 +45,76 @@ header#header {
 .swiper-pagination-bullet-active {
   @apply !bg-azul;
 }
+.prose {
+  @apply max-w-full;
+}
+
+.banner-home {
+  .item {
+    background: url(../img/banner-home.jpg);
+    @apply bg-center bg-cover bg-no-repeat;
+  }
+}
+.banner-interior {
+  @apply bg-center bg-cover bg-no-repeat;
+}
+.banner-nosotros {
+  background-image: url(../img/banner-nosotros.jpg);
+}
+.banner-reconocimiento {
+  background-image: url(../img/banner-reconocimiento.jpg);
+}
+.banner-areas-practica {
+  background-image: url(../img/banner-area-de-practica.jpg);
+}
+.banner-contacto {
+  background-image: url(../img/banner-contacto.jpg);
+}
 @media (max-width: 768px) {
+  header#header {
+    background: none;
+  }
   .bg-gradient-banner {
     background: linear-gradient(
       90deg,
       #00244c 0%,
       rgba(38, 117, 217, 0.4) 100%
     );
+  }
+  .banner-home {
+    .bg-gradient-banner {
+      background: linear-gradient(
+        180deg,
+        #00244c -20%,
+        rgba(217, 217, 217, 0) 100%
+      );
+    }
+    .item {
+      background: url(../img/banner-home-m.jpg);
+      @apply bg-bottom bg-no-repeat;
+      background-size: 100% auto;
+    }
+  }
+  .banner-nosotros {
+    background-image: url(../img/banner-nosotros-m.jpg);
+  }
+  .banner-reconocimiento {
+    background-image: url(../img/banner-reconocimiento-m.jpg);
+  }
+  .banner-areas-practica {
+    background-image: url(../img/banner-area-de-practica-m.jpg);
+  }
+  .banner-contacto {
+    background-image: url(../img/banner-contacto-m.jpg);
+  }
+  .banner-interior {
+    .bg-gradient-banner {
+      background: linear-gradient(
+        90deg,
+        #00244c 0%,
+        rgba(217, 217, 217, 0) 50%
+      );
+    }
   }
   #menu-principal {
     .menu {

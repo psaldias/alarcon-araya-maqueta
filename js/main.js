@@ -3,19 +3,22 @@ menu_button.addEventListener("click", () => {
   document.querySelector("#menu-principal .menu").classList.toggle("active");
 });
 
-const swiper = new Swiper(".swiper-clientes", {
-  // Optional parameters
-  loop: true,
-  autoHeight: true,
+const swiper_clientes = document.getElementsByClassName("swiper-clientes");
+if (swiper_clientes.length > 0) {
+  const swiper = new Swiper(".swiper-clientes", {
+    // Optional parameters
+    loop: true,
+    autoHeight: true,
 
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+    },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-next",
-    prevEl: ".swiper-prev",
-  },
-});
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-next",
+      prevEl: ".swiper-prev",
+    },
+  });
+}

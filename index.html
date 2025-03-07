@@ -18,7 +18,7 @@
             <div id="menu-principal" class="order-2 sm:order-1">
                 <button class="block md:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="text-azul w-10 h-10"
-                        fill="#FFF">
+                        fill="#143f74">
                         <path
                             d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
                     </svg>
@@ -34,7 +34,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="rrss md:min-w-28 md:order-2 mr-6 md:mr-0">
+            <div class="rrss md:min-w-28 md:order-2 mr-6 md:mr-0 hidden sm:block">
                 <ul class="flex items-center justify-end">
                     <li><a href="https://www.instagram.com/alarcon_araya/" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 20 22"
@@ -56,24 +56,23 @@
         </div>
     </header>
 
-    <div class="banner-principal relative">
+    <div class="banner-principal relative banner-home">
         <div class="slider">
-            <div class="item bg-cover bg-center min-h-[500px] lg:min-h-[800px] h-svh w-full relative"
-                style="background-image:url(img/banner-home.jpg)">
-                <div class="h-full lg:w-6/12  bg-gradient-banner flex items-center">
+            <div class="item  min-h-[500px] lg:min-h-[800px] h-svh w-full relative">
+                <div class="pt-32 md:pt-0 md:h-full md:w-8/12 xl:w-6/12  bg-gradient-banner flex items-center">
                     <div class="content px-4 md:max-w-[60%] mx-auto ">
-                        <h2 class="font-pt text-white text-2xl xl:text-4xl">
+                        <h2 class="font-pt text-white text-3xl xl:text-4xl">
                             Somos especialistas en materia penal y litigación. 
                         </h2>
                         <div class="border-b border-b-white/30 max-w-[50%] my-4"></div>
 
-                        <div class="description text-white font-inter leading-7 ">
+                        <div class="description text-white font-inter prose prose-sm sm:prose-base ">
                             Representamos a personas naturales y jurídicas, en cualquier conflicto criminal al que se
                             vean expuestas, ya sea como víctimas o imputados, y, además, otorgamos una asesoría integral
                             en otras materias penales de relevancia actual, como es el compliance y, en particular, la
                             responsabilidad penal de las personas jurídicas.
                         </div>
-                        <div class="pt-10">
+                        <div class="pt-4 sm:pt-10">
                             <a href="nosotros.html" class="btn btn-blue w-full max-w-48 block text-center ">Nosotros</a>
                         </div>
                     </div>
@@ -226,7 +225,7 @@
     <footer class="bg-azul-oscuro text-white px-4 py-14">
         <div
             class="max-w-[95%] lg:max-w-[80%] mx-auto flex flex-wrap sm:flex-nowrap justify-center items-center sm:items-start space-y-6 sm:space-y-0">
-            <div class="w-full sm:w-1/4 ">
+            <div class="w-full sm:w-1/4 text-center sm:text-left">
                 <a href="index.html" class="inline-block"><img src="img/logo.png" alt="logo"
                         class="h-20 sm:h-24 block mx-auto sm:mx-0"></a>
             </div>
