@@ -70,6 +70,7 @@ header#header {
 }
 .banner-contacto {
   background-image: url(../img/banner-contacto.jpg);
+  background-position: center 20%;
 }
 @media (max-width: 768px) {
   header#header {
