@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/main.css?v=003">
     <title>Nosotros - Alarcón Araya</title>
 </head>
@@ -56,7 +59,89 @@
         </div>
     </header>
 
-    <div class="banner-principal relative">
+    <div class="banner-principal relative banner-interior ">
+        <!-- Slider main container -->
+        <div class="swiper swiper-home relative">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide  w-full relative">
+                    <div
+                        class="pt-32  md:pt-16 lg:pt-0  md:w-12/12 lg:w-8/12 xl:w-5/12  bg-gradient-banner flex items-center relative z-10 md:absolute top-0 left-0 right-0 bottom-0">
+                        <div class="content  pb-10 sm:pb-0 px-4 sm:px-14 lg:pl-[10%]  xl:pl-[20%] ">
+                            <h2 class="font-pt text-white text-3xl sm:text-4xl">
+                                Ética profesional
+                            </h2>
+                            <div class="border-b border-b-white/30 max-w-[50%] my-4"></div>
+
+                            <div class="description text-white font-inter prose prose-sm md:prose-base ">
+                                La ética profesional y el trabajo en equipo son los pilares que sostienen nuestro
+                                trabajo diario.
+                                Nos regimos por los más altos estándares de integridad, pudiendo garantizar a los
+                                clientes que cada
+                                caso sea tratado con transparencia, confidencialidad y dedicación, con pleno respeto a
+                                la normativa
+                                vigente.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imagen !mt-[-25%] sm:!mt-0 z-0">
+                        <img src="/img/banners/banner-nosotros-1.jpg" alt="" class="hidden sm:block">
+                        <img src="/img/banners/banner-nosotros1.jpg" alt="" class="sm:hidden">
+                    </div>
+                </div>
+                <div class="swiper-slide  w-full relative">
+                    <div
+                        class="pt-32  md:pt-16 lg:pt-0  md:w-12/12 lg:w-8/12 xl:w-5/12  bg-gradient-banner flex items-center relative z-10 md:absolute top-0 left-0 right-0 bottom-0">
+                        <div class="content  pb-10 sm:pb-0 px-4 sm:px-14 lg:pl-[10%]  xl:pl-[20%] ">
+                            <h2 class="font-pt text-white text-3xl sm:text-4xl">
+                                Trabajo en equipo
+                            </h2>
+                            <div class="border-b border-b-white/30 max-w-[50%] my-4"></div>
+
+                            <div class="description text-white font-inter prose prose-sm md:prose-base ">
+                                Además, nuestra labor se enriquece mediante la colaboración interdisciplinaria entre los
+                                miembros de
+                                nuestro equipo, fomentando un enfoque integral y estratégico, que garantiza soluciones
+                                jurídicas que
+                                se
+                                adaptan a la complejidad y particularidad de cada caso.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imagen !mt-[-25%] sm:!mt-0 z-0">
+                        <img src="/img/banners/banner-nosotros-2.jpg" alt="" class="hidden sm:block">
+                        <img src="/img/banners/banner-nosotros2.jpg" alt="" class="sm:hidden">
+                    </div>
+                </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-navegation  is-justify-content-space-between hidden md:flex">
+                <div class="swiper-prev absolute top-2/4 translate-y-[-70%] z-50 left-2 lg:left-10"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                        stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-circle-chevron-left ">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M13 15l-3 -3l3 -3" />
+                        <path d="M21 12a9 9 0 1 0 -18 0a9 9 0 0 0 18 0z" />
+                    </svg></div>
+                <div class="swiper-next absolute top-2/4 right-2 lg:right-10 translate-y-[-70%] z-50  ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                        stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-circle-chevron-right ">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M11 9l3 3l-3 3" />
+                        <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0z" />
+                    </svg>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination !absolute bottom-5 sm:!bottom-10  flex justify-center "></div>
+        </div>
+    </div>
+
+    <!-- <div class="banner-principal relative">
         <div class="slider">
             <div class="item  w-full  banner-interior banner-nosotros relative">
                 <div
@@ -85,9 +170,9 @@
                     fill="white" />
             </svg>
         </div>
-    </div>
+    </div> -->
 
-    <div class="titulo text-center py-10 px-4">
+    <!-- <div class="titulo text-center py-10 px-4">
         <h2 class="font-pt text-azul text-2xl xl:text-3xl font-bold">
             Ética profesional y trabajo en equipo
         </h2>
@@ -114,7 +199,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="titulo text-center py-10 px-4">
         <h2 class="font-pt text-azul text-2xl xl:text-3xl font-bold">
@@ -589,11 +674,6 @@
                 <a href="index.html" class="inline-block"><img src="img/logo.png" alt="logo"
                         class="h-20 sm:h-24 block mx-auto sm:mx-0"></a>
             </div>
-            <div class="w-full  text-center sm:text-left">
-                <a href="http://novoaabogados.cl/" target="_blank" class="inline-block"><img
-                        src="img/novoa-abogados-footer.png" alt="Novoa Abogados"
-                        class="max-w-52 w-full mx-auto sm:mx-0"></a>
-            </div>
             <div class="text-sm  text-center sm:text-left order-2 sm:order-1 w-full self-start">
                 <p class=" mb-3"><b>Ubicación</b></p>
                 <p>
@@ -608,20 +688,30 @@
                     Email: <a href="mailto:contacto@ayal.cl">contacto@ayal.cl</a><br>
                     Telefono: <a href="tel:+56413832266">(+56 41) 3832266</a>
                 </p>
-                <a href="https://www.linkedin.com/company/alarcón-y-araya-abogados/" target="_blank"
-                    class="mt-4 bg-[#1e293b] p-2 inline-block rounded-full w-8 h-8 text-center hover:bg-azul transition-all duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 20 22" fill="none">
-                        <path
-                            d="M10.7201 9.65826C10.9007 9.45624 11.0646 9.24896 11.2411 9.05221C11.9914 8.21609 12.8616 7.56885 13.9133 7.21301C14.7559 6.92817 15.6185 6.83659 16.4824 7.06621C18.1948 7.52152 19.3324 8.62933 19.8438 10.4107C19.9465 10.7678 19.9959 11.1377 19.9959 11.5119C19.9976 14.7608 19.9972 18.0098 19.9997 21.2587C19.9997 21.3406 19.9792 21.363 19.9008 21.363C18.476 21.3604 17.0513 21.3599 15.6265 21.3639C15.5209 21.3639 15.5297 21.3087 15.5297 21.2359C15.5305 18.2609 15.5297 15.2858 15.5313 12.3103C15.5313 12.228 15.5179 12.1526 15.4852 12.0781C15.3746 11.8248 15.2471 11.582 15.0715 11.3708C14.649 10.8629 14.1271 10.745 13.5273 10.9523C13.0725 11.1092 12.6851 11.3883 12.32 11.7034C11.7328 12.2109 11.2289 12.8003 10.7666 13.4309C10.7209 13.4931 10.7196 13.5566 10.7196 13.6259C10.7196 16.1522 10.7196 18.678 10.7196 21.2044C10.7196 21.3788 10.7406 21.3604 10.5675 21.3604C9.16703 21.3604 7.76699 21.3595 6.36653 21.363C6.26887 21.363 6.24707 21.3349 6.24707 21.2359C6.24959 16.5159 6.24959 11.7959 6.24707 7.07585C6.24707 6.97068 6.27096 6.94351 6.37282 6.94395C7.77999 6.94789 9.18757 6.94746 10.5947 6.94395C10.6945 6.94395 10.7234 6.96805 10.723 7.07541C10.7184 7.89663 10.7205 8.71828 10.7205 9.5395C10.7205 9.57894 10.7205 9.61794 10.7205 9.65738L10.7201 9.65826Z"
-                            fill="white" />
-                        <path
-                            d="M0.00251504 14.1632C0.00251504 11.8012 0.00293421 9.43964 0 7.07809C0 6.97336 0.0230545 6.94531 0.125333 6.94531C1.5325 6.94926 2.93966 6.94926 4.34682 6.94531C4.44743 6.94531 4.47341 6.97029 4.47341 7.07678C4.47048 11.7964 4.4709 16.5159 4.47341 21.236C4.47341 21.335 4.4512 21.3635 4.35353 21.363C2.94301 21.3595 1.53208 21.3595 0.12156 21.363C0.0259887 21.363 0.000419173 21.3381 0.000419173 21.2368C0.00335338 18.8788 0.00251504 16.5208 0.00251504 14.1627V14.1632Z"
-                            fill="white" />
-                        <path
-                            d="M2.1948 0.397466C3.40412 0.400095 4.3875 1.4356 4.37828 2.69678C4.36905 3.96454 3.38567 4.98471 2.17678 4.9812C0.972915 4.97769 -0.00208101 3.94219 0.00294906 2.67224C0.00797914 1.40843 0.984652 0.394837 2.1948 0.397466Z"
-                            fill="white" />
-                    </svg>
-                </a>
+                <p class="flex items-center space-x-2 mt-2 justify-center sm:justify-start">
+                    <span class="font-bold">Linkedin</span>
+                    <a href="https://www.linkedin.com/company/alarcón-y-araya-abogados/" target="_blank"
+                        class=" bg-[#1e293b] p-2  inline-block rounded-full w-8 h-8 text-center hover:bg-azul transition-all duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 20 22" fill="none">
+                            <path
+                                d="M10.7201 9.65826C10.9007 9.45624 11.0646 9.24896 11.2411 9.05221C11.9914 8.21609 12.8616 7.56885 13.9133 7.21301C14.7559 6.92817 15.6185 6.83659 16.4824 7.06621C18.1948 7.52152 19.3324 8.62933 19.8438 10.4107C19.9465 10.7678 19.9959 11.1377 19.9959 11.5119C19.9976 14.7608 19.9972 18.0098 19.9997 21.2587C19.9997 21.3406 19.9792 21.363 19.9008 21.363C18.476 21.3604 17.0513 21.3599 15.6265 21.3639C15.5209 21.3639 15.5297 21.3087 15.5297 21.2359C15.5305 18.2609 15.5297 15.2858 15.5313 12.3103C15.5313 12.228 15.5179 12.1526 15.4852 12.0781C15.3746 11.8248 15.2471 11.582 15.0715 11.3708C14.649 10.8629 14.1271 10.745 13.5273 10.9523C13.0725 11.1092 12.6851 11.3883 12.32 11.7034C11.7328 12.2109 11.2289 12.8003 10.7666 13.4309C10.7209 13.4931 10.7196 13.5566 10.7196 13.6259C10.7196 16.1522 10.7196 18.678 10.7196 21.2044C10.7196 21.3788 10.7406 21.3604 10.5675 21.3604C9.16703 21.3604 7.76699 21.3595 6.36653 21.363C6.26887 21.363 6.24707 21.3349 6.24707 21.2359C6.24959 16.5159 6.24959 11.7959 6.24707 7.07585C6.24707 6.97068 6.27096 6.94351 6.37282 6.94395C7.77999 6.94789 9.18757 6.94746 10.5947 6.94395C10.6945 6.94395 10.7234 6.96805 10.723 7.07541C10.7184 7.89663 10.7205 8.71828 10.7205 9.5395C10.7205 9.57894 10.7205 9.61794 10.7205 9.65738L10.7201 9.65826Z"
+                                fill="white" />
+                            <path
+                                d="M0.00251504 14.1632C0.00251504 11.8012 0.00293421 9.43964 0 7.07809C0 6.97336 0.0230545 6.94531 0.125333 6.94531C1.5325 6.94926 2.93966 6.94926 4.34682 6.94531C4.44743 6.94531 4.47341 6.97029 4.47341 7.07678C4.47048 11.7964 4.4709 16.5159 4.47341 21.236C4.47341 21.335 4.4512 21.3635 4.35353 21.363C2.94301 21.3595 1.53208 21.3595 0.12156 21.363C0.0259887 21.363 0.000419173 21.3381 0.000419173 21.2368C0.00335338 18.8788 0.00251504 16.5208 0.00251504 14.1627V14.1632Z"
+                                fill="white" />
+                            <path
+                                d="M2.1948 0.397466C3.40412 0.400095 4.3875 1.4356 4.37828 2.69678C4.36905 3.96454 3.38567 4.98471 2.17678 4.9812C0.972915 4.97769 -0.00208101 3.94219 0.00294906 2.67224C0.00797914 1.40843 0.984652 0.394837 2.1948 0.397466Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </p>
+            </div>
+
+            <div class="text-sm  text-center sm:text-left order-2 sm:order-1 w-full self-start">
+                <p class=" mb-3"><b>Oficina asociada</b></p>
+                <a href="http://novoaabogados.cl/" target="_blank" class="inline-block"><img
+                        src="img/novoa-abogados-footer.png" alt="Novoa Abogados"
+                        class="max-w-52 w-full mx-auto sm:mx-0"></a>
             </div>
         </div>
     </footer>

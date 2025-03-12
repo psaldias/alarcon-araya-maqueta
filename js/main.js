@@ -46,18 +46,50 @@ if (swiper_reconocimientos.length > 0) {
 
     slidesPerView: 2,
     centeredSlides: true,
-    spaceBetween: 20,
+    spaceBetween: 10,
     centeredSlidesBounds: true,
-    height: 500,
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-next",
+      prevEl: ".swiper-prev",
+    },
     // Responsive breakpoints
     breakpoints: {
       // when window width is >= 320px
       768: {
-        slidesPerView: 3,
-        centeredSlides: false,
-        spaceBetween: 20,
-        centeredSlidesBounds: false,
+        slidesPerView: 4,
+        spaceBetween: 10,
+        centeredSlides: true,
+        centeredSlidesBounds: true,
       },
+    },
+  });
+}
+
+const swiper_home = document.getElementsByClassName("swiper-home");
+if (swiper_home.length > 0) {
+  const swiper = new Swiper(".swiper-home", {
+    // Optional parameters
+    loop: true,
+    autoHeight: true,
+    // autoplay: {
+    //   delay: 5000,
+    // },
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+    speed: 1000,
+
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-next",
+      prevEl: ".swiper-prev",
     },
   });
 }
