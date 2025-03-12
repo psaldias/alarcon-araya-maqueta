@@ -2097,6 +2097,38 @@ video {
   background-image: url(../img/reconocimiento-cuadro-2.jpg);
 }
 
+.bg-\[url\(\.\.img\/nosotros-cuadro-1\.jpg\)\]{
+  background-image: url(..img/nosotros-cuadro-1.jpg);
+}
+
+.bg-\[url\(\.\.img\/nosotros-cuadro-2\.jpg\)\]{
+  background-image: url(..img/nosotros-cuadro-2.jpg);
+}
+
+.bg-\[url\(\.\.img\/reconocimiento-cuadro-1\.jpg\)\]{
+  background-image: url(..img/reconocimiento-cuadro-1.jpg);
+}
+
+.bg-\[url\(\.\.img\/reconocimiento-cuadro-2\.jpg\)\]{
+  background-image: url(..img/reconocimiento-cuadro-2.jpg);
+}
+
+.bg-\[url\(\.\.img\/area-de-practica-cuadro-1\.jpg\)\]{
+  background-image: url(..img/area-de-practica-cuadro-1.jpg);
+}
+
+.bg-\[url\(\.\.img\/area-de-practica-cuadro-2\.jpg\)\]{
+  background-image: url(..img/area-de-practica-cuadro-2.jpg);
+}
+
+.bg-\[url\(\.\.img\/area-de-practica-cuadro-3\.jpg\)\]{
+  background-image: url(..img/area-de-practica-cuadro-3.jpg);
+}
+
+.bg-\[url\(\.\.img\/area-de-practica-cuadro-4\.jpg\)\]{
+  background-image: url(..img/area-de-practica-cuadro-4.jpg);
+}
+
 .bg-cover{
   background-size: cover;
 }
