@@ -72,9 +72,9 @@ if (swiper_home.length > 0) {
     // Optional parameters
     loop: true,
     autoHeight: true,
-    // autoplay: {
-    //   delay: 5000,
-    // },
+    autoplay: {
+      delay: 5000,
+    },
     effect: "fade",
     fadeEffect: {
       crossFade: true,
